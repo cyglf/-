@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        canvas{
+            display: block;
+            margin: 0 auto;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="canvas" width="900" height="600" style="border: 1px solid #000"></canvas>
+
+<script src = 'js/simple-inheritence.js'></script>
+<script src = 'js/underscore-min.js'></script>
+<script src = "js/Game.js"></script>
+<script src = 'js/FrameUtil.js'></script>
+<script src = 'js/StaticSourceUtil.js'></script>
+<script src = 'js/Background.js'></script>
+<script src = 'js/Pipe.js'></script>
+<script src = 'js/Bird.js'></script>
+
+<script>
+    // 1.实例化游戏对象
+    var game = new Game({
+        canvasId : 'canvas',
+        fps : 50  //  传-1表示电脑最大的帧数
+    });
+
+    // 2.调整画布的宽高
+    game.canvas.width = window.innerWidth;
+    game.canvas.height = window.innerHeight;
+
+
+
+</script>
+</body>
+</html>
